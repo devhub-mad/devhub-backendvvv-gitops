@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: 
+  labels:
+    app: 
+    app.kubernetes.io/component: backstage
+    backstage.io/kubernetes-id: devhub
+spec:
+  ports:
+    - name: http-
+      port: 
+      protocol: TCP
+      targetPort: 
+  selector:
+    app: 

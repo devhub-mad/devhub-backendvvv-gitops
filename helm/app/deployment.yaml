@@ -1,0 +1,27 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 
+  template:
+    metadata:
+      labels:
+        app: 
+        app.kubernetes.io/component: backstage
+        backstage.io/kubernetes-id: devhub
+    spec:
+      containers:
+        - name: 
+          image: //:latest
+          ports:
+            - name: http-
+              containerPort: 
+              protocol: TCP
+          resources:
+            limits:
+              memory: '128Mi'
+              cpu: '500m'
